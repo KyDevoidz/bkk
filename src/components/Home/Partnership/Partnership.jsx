@@ -48,17 +48,16 @@ const ReviewCard = ({ img }) => {
 
 const Partnership = () => {
   return (
-    <div className="pt-16 bg-slate-700 pb-28">
+    <div className="py-12 bg-slate-700 ">
       <h1 className="mt-2 text-xl sm:text-2xl px-14 md:text-3xl capitalize font-bold text-center text-white">
-        Partnership <br />
-        <p className="text-xs font-normal text-center md:w-[30%] mx-auto">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. In maiores
-          dolor nesciunt, numquam veniam enim commodi ipsa ullam quas eos vel
-          aspernatur doloremque, placeat temporibus molestias nam nobis sequi
-          aut.
-        </p>
+        Partnership
       </h1>
-      <div className="mt-16">
+      <p className="text-xs font-normal text-center md:w-[80%] mx-auto text-white px-2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. In maiores
+        dolor nesciunt, numquam veniam enim commodi ipsa ullam quas eos vel
+        aspernatur doloremque, placeat temporibus molestias nam nobis sequi aut.
+      </p>
+      <div className="mt-8">
         {/* Marquee for the first row of reviews */}
         <Marquee className="[--duration:20s]">
           {reviews.map((review, index) => (
