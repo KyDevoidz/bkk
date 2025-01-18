@@ -4,6 +4,15 @@ import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 
+/**
+ * Komponen Hero.
+ *
+ * Komponen ini digunakan untuk menampilkan komponen hero pada halaman
+ * utama. Komponen ini terdiri dari 2 bagian yaitu image dan text content.
+ * Animasi yang digunakan adalah animasi fade-in dan translate.
+ *
+ * @return {JSX.Element} Komponen Hero.
+ */
 const Hero = () => {
   return (
     <div className="w-full pt-[12vh] md:pt-[18vh] min-h-screen bg-[#f7f6fb]">
@@ -31,7 +40,7 @@ const Hero = () => {
           >
             {/* Top Box */}
             <div className="w-fit py-3 px-4  rounded-full shadow-md flex items-center space-x-3 bg-white border-2">
-              <div className="px-3 py-1 md:px-5 rounded-full bg-blue-700 md:text-base sm:text-sm text-xs text-white ">
+              <div className="px-3 py-2 md:px-5 rounded-full bg-blue-700 md:text-base sm:text-sm text-xs text-white ">
                 News
               </div>
               <p className="text-xs sm:text-sm">
@@ -39,16 +48,18 @@ const Hero = () => {
               </p>
             </div>
             {/* Heading */}
-            <h1 className="text-2xl sm:text-4xl mt-6 mb-6 font-bold md:leading-[3rem] lg:leading-[3.5rem]">
-              Temukan pekerjaan yang sesuai dengan kebutuhan Anda
-            </h1>
-            {/* Description */}
-            <p className="text-gray-700">
-              Kami membantu Anda menemukan pekerjaan yang sesuai dengan
-              kebutuhan Anda. Temukan pekerjaan yang sesuai dengan minat dan
-              kemampuan Anda.
-            </p>
-            <div className="flex">
+            <div className="text-center md:text-left">
+              <h1 className="text-2xl sm:text-4xl mt-6 mb-6 font-bold md:leading-[3re0m] lg:leading-[3.5rem]">
+                Temukan pekerjaan yang sesuai dengan kebutuhan Anda
+              </h1>
+              {/* Description */}
+              <p className="text-gray-700">
+                Kami membantu Anda menemukan pekerjaan yang sesuai dengan
+                kebutuhan Anda. Temukan pekerjaan yang sesuai dengan minat dan
+                kemampuan Anda.
+              </p>
+            </div>
+            <div className="flex justify-center md:justify-start mb-14">
               <Link
                 href="#"
                 className="shadow-xl px-3 py-2 md:px-5 md:py-3 mt-6 text-white bg-blue-700 rounded-full font-bold hover:bg-blue-950"

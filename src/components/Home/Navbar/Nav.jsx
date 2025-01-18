@@ -4,6 +4,21 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
 
+/**
+ * Komponen Nav.
+ *
+ * Komponen ini berfungsi sebagai navigasi utama di halaman web.
+ * Navigasi ini memiliki latar belakang yang dinamis berdasarkan
+ * posisi scroll pengguna. Saat pengguna menggulir lebih dari 90px,
+ * latar belakang navigasi berubah menjadi putih dengan bayangan.
+ *
+ * Komponen ini juga mengatur tampilan tautan navigasi untuk desktop
+ * dan menampilkan tombol menu burger untuk tampilan mobile.
+ *
+ * @param {function} openNav - Fungsi untuk membuka navigasi pada tampilan mobile.
+ * @return {JSX.Element} Elemen JSX untuk komponen navigasi.
+ */
+
 const Nav = ({ openNav }) => {
   // State untuk mengatur latar belakang navigasi berdasarkan scroll
   const [navBg, setNavBg] = useState(false);

@@ -2,6 +2,16 @@ import React from "react";
 import WhyChooseCard from "./WhyChooseCard";
 import { cardDatas } from "@/constant/Constant";
 
+/**
+ * Komponen WhyChoose.
+ *
+ * Komponen ini menampilkan bagian "Mengapa Memilih Bursa Kerja Ini" pada halaman.
+ * Terdiri dari judul utama dan grid kartu yang dihasilkan dari data dalam `cardDatas`.
+ * Setiap kartu berisi gambar, judul, deskripsi, dan teks tautan.
+ *
+ * @return {JSX.Element} Komponen WhyChoose yang di-render.
+ */
+
 const WhyChoose = () => {
   return (
     <div className="py-16">

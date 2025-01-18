@@ -3,6 +3,18 @@ import { navLink } from "@/constant/Constant";
 import { CgClose } from "react-icons/cg";
 import Link from "next/link";
 
+/**
+ * MobileNav component for mobile navigation menu.
+ *
+ * This component renders a mobile navigation menu that slides in
+ * from the side of the screen. It includes an overlay to cover the
+ * rest of the screen when the menu is open and a close button to
+ * hide the menu. The navigation links are displayed within the menu.
+ *
+ * @param {boolean} openNav - A boolean indicating if the navigation menu should be open.
+ * @param {function} handleNav - A function to toggle the navigation menu visibility.
+ */
+
 const MobileNav = ({ openNav, handleNav }) => {
   // Tentukan kelas CSS berdasarkan state navigasi
   const showNav = openNav ? "translate-x-0" : "-translate-x-full";
