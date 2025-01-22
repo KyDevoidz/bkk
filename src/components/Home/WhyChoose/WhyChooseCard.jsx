@@ -12,11 +12,11 @@ import React from "react";
  * @param {string} description - Deskripsi yang akan ditampilkan.
  * @returns {JSX.Element} Komponen WhyChooseCard.
  */
-const WhyChooseCard = ({ image, title, linkText, description }) => {
+const WhyChooseCard = ({ image, title, description }) => {
   return (
-    <div className="bg-white border rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 ease-in-out min-h-[350px] flex flex-col justify-between">
+    <div className="bg-white border rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 ease-in-out min-h-[295px] flex flex-col  mx-11">
       {/* Image */}
-      <div className="flex justify-center items-center mb-4">
+      <div className="flex justify-center items-center mb-12">
         <Image
           src={image}
           alt={title}
@@ -27,18 +27,12 @@ const WhyChooseCard = ({ image, title, linkText, description }) => {
       </div>
       {/* Title */}
       <h1 className="text-center text-lg font-semibold text-gray-800 ">
-        {title}
+        {title} <br />
+        <p className="text-center text-gray-600 font-medium text-sm ">
+          {description}
+        </p>
       </h1>
       {/* Description */}
-      <p className="text-center text-gray-600 font-medium text-sm ">
-        {description}
-      </p>
-      {/* Button */}
-      <div className="flex justify-center">
-        <button className="text-white bg-blue-600 p-2 px-4 rounded-full font-semibold hover:bg-blue-900 transition-all duration-300 text-xs">
-          {linkText}
-        </button>
-      </div>
     </div>
   );
 };
